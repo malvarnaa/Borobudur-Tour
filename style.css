@@ -1,0 +1,296 @@
+*{
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("gambar/borobudur6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+}
+
+.hero h1{
+    padding: 0 100px;
+    color: white;
+}
+.hero p{
+    padding: 0 100px;
+    color: white;
+}
+nav{
+    background-color: #FFF;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.255);
+    position: fixed;
+    z-index: 100;
+}
+label.logo{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    line-height: 52px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #fff;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+.sejarah{
+    background-color: rgb(255, 255, 255);
+}
+.sejarah p{
+    padding: 0 100px;
+}
+.sejarah h1{
+    padding: 0 100px;
+}
+.Sejarah{
+    background-color: rgb(255, 255, 255);
+}
+.Sejarah p{
+    padding: 0 100px;
+}
+.Sejarah h1{
+    padding: 0 100px;
+}
+.Sejarah h3{
+    padding: 0 100px;
+}
+.gambar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 100px;
+}
+
+
+
+.portfolio {
+    padding: 60px 0;
+}
+.portfolio .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-title span {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #555;
+}
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #333;
+}
+.section-title p {
+    font-size: 16px;
+    color: #666;
+}
+.gambar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.portfolio-item {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.portfolio-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.portfolio-info {
+    padding: 20px;
+    text-align: center;
+}
+.portfolio-info h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.portfolio-info p {
+    font-size: 16px;
+    color: #666;
+}
+.portfolio-info a {
+    margin: 5px;
+    color: #007bff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.portfolio-info a:hover {
+    color: #0056b3;
+}
+
+.portfolio #portfolio-flters {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    color: #444444;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #fff;
+  }
+  
+  .portfolio #portfolio-flters li:hover,
+  .portfolio #portfolio-flters li.filter-active {
+    color: #f3a200;
+    border-color: #ffb727;
+  }
+  
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio .portfolio-item .portfolio-img {
+    overflow: hidden;
+  }
+  
+  .portfolio .portfolio-item .portfolio-img img {
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    z-index: 3;
+    right: 15px;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info .preview-link,
+  .portfolio .portfolio-item .portfolio-info .details-link {
+    position: absolute;
+    right: 40px;
+    font-size: 24px;
+    top: calc(50% - 18px);
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info .preview-link:hover,
+  .portfolio .portfolio-item .portfolio-info .details-link:hover {
+    color: #ffc041;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info .details-link {
+    right: 10px;
+  }
+  
+  .portfolio .portfolio-item:hover .portfolio-img img {
+    transform: scale(1.2);
+  }
+  
+  .portfolio .portfolio-item:hover .portfolio-info {
+    opacity: 1;
+}
+
+#lokasi {
+    text-align: center; /* Untuk menengahkan konten */
+    padding: 50px 0; /* Padding 50px atas/bawah, tanpa padding kiri/kanan */
+}
+
+.lokasi {
+    max-width: 1000px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Centering konten */
+    padding: 0 20px; /* Padding 0 atas/bawah, 20px kiri/kanan */
+    box-sizing: border-box; /* Menyesuaikan padding dengan lebar maksimum */
+}
+
+h1 {
+    margin-right: 70%; /* Margin bawah untuk judul "Lokasi" */
+}
+
+iframe {
+    width: 100%; /* Agar lebar iframe mengisi div .lokasi */
+    height: 600px; /* Tinggi iframe */
+    border: 0; /* Menghilangkan border */
+}
